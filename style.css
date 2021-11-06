@@ -1,0 +1,243 @@
+/* ================================ Estilos Generales ================================ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body * {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+/* ================================ Header General ================================ */
+
+header {
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #113a56;
+}
+
+nav {
+    background-color: #113a5600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li {
+    background-color: #113a5600; 
+}
+
+.logout{
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    background-color: #113a5600;
+    margin: auto;
+    align-items: flex-start;
+    height: 20px;
+    z-index: 1;
+}
+
+.navLinks {
+    margin-top: 1rem;
+    background-color: #113a5600;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.navLink {
+    background-color: #113a5600;
+    margin-left: 2rem;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: #ffc26a;
+}
+
+@media only screen and (min-width: 768px){
+
+    nav{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        align-items: flex-start;
+        height: 30px;
+    }
+
+    .navLinks{
+        flex: 4;
+        justify-content: flex-end;
+    }
+
+    .navLink {
+        margin-left: 3rem;
+        font-size: 1.65rem;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        align-items: center;
+        height: 50px;
+    }
+
+    .navLinks{
+        justify-content: flex-end;
+        margin-right: 10%;
+        flex: 4;
+    }
+
+    .navLink {
+        margin-left: 6rem;
+        font-size: 1.8rem;
+    }
+}
+
+/* Generales */
+.titulo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+}
+
+/* FORMULARIO WALLET */
+
+.formulario_wallet{
+    margin: auto;
+    margin-top: 1rem;
+    width: 50%;
+}
+
+.img_logo_insert_wallet{
+    margin-top: 10rem;
+}
+
+.title_form_wallet{
+    font-size: 14px;
+}
+
+/* MINEROS */
+
+.itemMiner{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border-top: solid 2px rgba(128, 128, 128, 0.2);
+    border-left: solid 2px rgba(128, 128, 128, 0.2);
+    border-right: solid 2px rgb(53, 53, 53, 0.2);
+    border-bottom: solid 2px rgb(53, 53, 53, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.headerItemMiner{
+    display: flex;
+    align-items: center;
+}
+
+.imageStatus {
+    margin-right: 10px;
+    align-items: center;
+    width: 8rem;
+}
+
+.itemMiner:hover {
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.3);
+}
+
+.nameMiner {
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+}
+
+@media only screen and (max-width: 768px){
+    .itemMiner{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .itemMiner{
+        width: 70%;
+        margin: auto;
+    }
+
+}
+
+/* ESTADISTICAS */
+.sectionEstadisticas{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemEstimadoEstadistica{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemEstadistica{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border-top: solid 2px rgba(128, 128, 128, 0.2);
+    border-left: solid 2px rgba(128, 128, 128, 0.2);
+    border-right: solid 2px rgb(53, 53, 53, 0.2);
+    border-bottom: solid 2px rgb(53, 53, 53, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}

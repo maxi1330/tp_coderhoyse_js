@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>TP Final</title> 
+</head>
+<body>
+  <header id="navbarGeneral">
+    <nav class="navbar navbar-expand-sm">
+      <img class="logo"
+            src="./resources/minarg_logo.png"
+            alt="Logo"/>
+      <ul class="navLinks">
+        <li class="navLink" id="btnMineros">MINEROS</li>
+        <li class="navLink" id="btnEstadisticas">ESTADISTICAS</li>
+        <li class="navLink" id="btnPagos">PAGOS</li>
+      </ul>
+      <div class="logout collapse navbar-collapse" id="navbar-list-4">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="resources/undraw_profile.svg" width="40" height="40" class="rounded-circle">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <button class="dropdown-item" id="btnCloseSession">Cerrar sesion</button>
+            </div>
+          </li>   
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container inputWallet" id="inputWallet" >
+      <div class="col">
+        <div class="row justify-content-md-center">
+          <img class="img_logo_insert_wallet" src="resources/minarg_logo.png" width="250" height="250">
+        </div>
+        <form class="formulario_wallet">
+          <div class="form-group">
+            <label class="title_form_wallet">Ingrese su direccion de billetera:</label>
+            <input type="text" class="form-control" id="value_wallet" aria-describedby="input_wallet" placeholder="Direccion billetera">
+          </div>
+          <button id="boton_guardar_wallet" type="submit" class="btn btn-primary boton_guardar_wallet" type="button">Guardar</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="gridMineros" id="gridMineros">
+    </section>
+
+    <section class="sectionEstadisticas" id="sectionEstadisticas">
+      <div class="itemEstadistica">
+        <h3 class="itemPagoValue" id="valuePagoETH">-</h3>
+        <h3 class="itemPagoValue titulo">Total Pago</h3>
+      </div>
+      <div class="itemEstimadoEstadistica">
+        <div class="itemEstadistica">
+          <h3 class="itemPagoValue" id="valueEstimadoSemanalETH">-</h3>
+          <h3 class="itemPagoValue titulo">Estimado semanal</h3>
+        </div>
+        <div class="itemEstadistica">
+          <h3 class="itemPagoValue" id="valueEstimadoDiarioETH">-</h3>
+          <h3 class="itemPagoValue titulo">Estimado 24hs</h3>
+        </div>
+      </div>
+      <div class="itemEstadistica">
+        <h3 class="itemPagoValue" id="valuePendientePagoETH">-</h3>
+        <h3 class="itemPagoValue titulo">Pendiente de pago</h3>
+      </div>
+    </section>
+
+    <section class="sectionPagos" id="sectionPagos">
+    </section>
+
+  </main>
+
+  
+  <script src="js/dom.js"></script>
+  <script src="js/constantes.js"></script>
+  <script src="js/entitys.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
